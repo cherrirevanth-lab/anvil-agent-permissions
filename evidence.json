@@ -1,0 +1,18 @@
+{
+  "project": "08-agent-permissions",
+  "node": "v26.13.0",
+  "ok": true,
+  "durationMs": 339,
+  "checks": [
+    {
+      "name": "unit-tests",
+      "ok": true,
+      "detail": "17 passed, 0 failed"
+    },
+    {
+      "name": "cli-smoke",
+      "ok": true,
+      "detail": "allow/ask/deny trace completed"
+    }
+  ]
+}

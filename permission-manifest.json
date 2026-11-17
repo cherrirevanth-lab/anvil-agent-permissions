@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "project": "08-agent-permissions",
+  "runtime": { "kind": "node", "minVersion": "22", "dependencies": 0 },
+  "network": { "required": false, "hosts": [] },
+  "secrets": [],
+  "environment": [],
+  "filesystem": [{ "scope": "read", "path": "this repository" }],
+  "processes": { "spawns": [], "reason": "none" },
+  "github": {
+    "workflowPermissions": { "contents": "read" },
+    "reason": "CI only reads the repository"
+  },
+  "humanApprovalRequiredFor": [
+    "any tool call the kernel answers with ask",
+    "changing the default policy in src/index.mjs"
+  ]
+}

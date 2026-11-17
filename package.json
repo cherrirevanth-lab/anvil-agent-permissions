@@ -1,0 +1,15 @@
+{
+  "name": "@anvil/agent-permissions",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Ask/allow/deny kernel for agent tool calls. Injection cannot approve itself.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/",
+    "start": "node src/cli.mjs",
+    "verify": "node verify.mjs"
+  },
+  "keywords": ["agent", "permissions", "approval", "security"],
+  "license": "MIT"
+}
